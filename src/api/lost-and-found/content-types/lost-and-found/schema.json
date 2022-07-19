@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lost_and_founds",
+  "info": {
+    "singularName": "lost-and-found",
+    "pluralName": "lost-and-founds",
+    "displayName": "lost-and-found"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Claim": {
+      "type": "boolean"
+    },
+    "Found": {
+      "type": "boolean"
+    },
+    "LostOrFound": {
+      "type": "enumeration",
+      "enum": [
+        "Found",
+        "Lost"
+      ]
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phonenumber": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "text"
+    },
+    "Date_found": {
+      "type": "string"
+    },
+    "Claim_name": {
+      "type": "string"
+    },
+    "Identifying_question": {
+      "type": "string"
+    },
+    "Close": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
