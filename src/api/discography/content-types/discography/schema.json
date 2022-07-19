@@ -35,6 +35,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "Emial": {
+      "type": "email"
     }
   }
 }
