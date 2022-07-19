@@ -4,7 +4,8 @@
   "info": {
     "singularName": "projects-portfolio",
     "pluralName": "projects-portfolios",
-    "displayName": "ProjectsPortfolio"
+    "displayName": "ProjectsPortfolio",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,11 +42,30 @@
       "type": "string"
     },
     "Thumbnail": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "project_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-image.project-image"
+    },
+    "roles_portfolios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::roles-portfolio.roles-portfolio"
+    },
+    "Display": {
+      "type": "boolean"
     }
   }
 }

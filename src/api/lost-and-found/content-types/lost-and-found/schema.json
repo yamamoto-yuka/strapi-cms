@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lost-and-found",
     "pluralName": "lost-and-founds",
-    "displayName": "lost-and-found"
+    "displayName": "lost-and-found",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -54,6 +55,10 @@
     "Close": {
       "type": "boolean",
       "default": false
+    },
+    "Display": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
