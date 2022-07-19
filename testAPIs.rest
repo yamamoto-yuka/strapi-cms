@@ -1,0 +1,80 @@
+GET https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds
+
+# Get By ID
+###
+GET https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds/1?populate=*
+
+###
+POST https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds
+Content-Type: application/json
+
+{
+  "data":{
+    "Title":"New Test task from API test",
+    "Location":"test location",
+    "Claim": false,
+    "Found": false,
+    "LostOrFound": "Lost",
+    "Email": "test@email.com",
+    "Phonenumber": "000-000-000",
+    "Description": "Something",
+    "Image":"https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "Date_found":"2022-01-07",
+    "Claim_name": "Test Name",
+    "Identifying_question" :"Test question",
+     "Close": false
+  }
+}
+
+
+###
+PUT https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds/3
+Content-Type:  application/json
+
+{
+  "data":{
+    "Title":"New Test task from API test",
+    "Location":"test location",
+    "Claim": false,
+    "Found": false,
+    "LostOrFound": "Lost",
+    "Email": "test@email.com",
+    "Phonenumber": "000-000-000",
+    "Description": "Something",
+    "Image":"https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "Date_found":"2022-06-07",
+    "Claim_name": "Test Name"
+  }
+}
+
+
+###
+POST https://cms.yukayamamoto.me/api/leads
+Content-Type: application/json
+
+{
+   "data":{
+    "Name":"Test",
+    "Email":"test@tes.com",
+    "Message":"Some test message from local"
+   }
+}
+
+
+### Portfolio
+GET https://cms.yukayamamoto.me/api/skills?populate=*
+
+###
+GET https://cms.yukayamamoto.me/api/projects-portfolios?populate=deep
+
+###
+GET https://cms.yukayamamoto.me/api/projects-portfolios/1?populate=deep
+
+### Login APP
+POST https://cms.yukayamamoto.me/api/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "bill@bill.com",
+  "password": "123456"
+}

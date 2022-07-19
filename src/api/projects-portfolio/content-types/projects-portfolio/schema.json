@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects_portfolios",
+  "info": {
+    "singularName": "projects-portfolio",
+    "pluralName": "projects-portfolios",
+    "displayName": "ProjectsPortfolio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid"
+    },
+    "SiteURL": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "casestudy",
+        "development",
+        "others"
+      ]
+    },
+    "CLientName": {
+      "type": "string"
+    },
+    "StartDate": {
+      "type": "string"
+    },
+    "EndDate": {
+      "type": "string"
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
