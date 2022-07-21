@@ -1,11 +1,11 @@
-GET https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds
-
-# Get By ID
-###
-GET https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds/1?populate=*
+### Lost And Found
+GET https://cms.yukayamamoto.me/api/lost-and-founds
 
 ###
-POST https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds
+GET https://cms.yukayamamoto.me/api/lost-and-founds/1
+
+###
+POST https://cms.yukayamamoto.me/api/lost-and-founds
 Content-Type: application/json
 
 {
@@ -22,13 +22,12 @@ Content-Type: application/json
     "Date_found":"2022-01-07",
     "Claim_name": "Test Name",
     "Identifying_question" :"Test question",
-     "Close": false
+    "Close": false
   }
 }
 
-
 ###
-PUT https://hammerhead-app-lb3j6.ondigitalocean.app/api/lost-and-founds/3
+PUT https://cms.yukayamamoto.me/api/lost-and-founds/3
 Content-Type:  application/json
 
 {

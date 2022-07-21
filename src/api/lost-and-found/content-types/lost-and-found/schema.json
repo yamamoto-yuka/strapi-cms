@@ -55,10 +55,6 @@
     "Close": {
       "type": "boolean",
       "default": false
-    },
-    "Display": {
-      "type": "boolean",
-      "default": true
     }
   }
 }

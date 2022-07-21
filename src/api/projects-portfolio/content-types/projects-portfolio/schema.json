@@ -66,6 +66,9 @@
     },
     "Display": {
       "type": "boolean"
+    },
+    "Casestudy": {
+      "type": "richtext"
     }
   }
 }
