@@ -19,10 +19,12 @@
       "type": "string"
     },
     "Claim": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Found": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "LostOrFound": {
       "type": "enumeration",
