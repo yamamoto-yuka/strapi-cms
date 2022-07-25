@@ -77,6 +77,17 @@ Content-Type: application/json
    }
 }
 
+###
+POST https://cms.yukayamamoto.me/api/contact-portfolios
+Content-Type: application/json
+
+{
+   "data":{
+    "ClientName":"Test",
+    "ClientEmail":"test@tes.com",
+    "Message":"Some test message from local"
+   }
+}
 
 
 
