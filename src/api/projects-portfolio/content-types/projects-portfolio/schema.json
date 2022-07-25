@@ -32,7 +32,7 @@
         "others"
       ]
     },
-    "CLientName": {
+    "ClientName": {
       "type": "string"
     },
     "StartDate": {
@@ -69,6 +69,9 @@
     },
     "Casestudy": {
       "type": "richtext"
+    },
+    "GithubURL": {
+      "type": "string"
     }
   }
 }

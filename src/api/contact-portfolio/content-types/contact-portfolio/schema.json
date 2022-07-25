@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_portfolios",
+  "info": {
+    "singularName": "contact-portfolio",
+    "pluralName": "contact-portfolios",
+    "displayName": "ContactPortfolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClientName": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "text"
+    },
+    "ClientEmail": {
+      "type": "email"
+    }
+  }
+}
