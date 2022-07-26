@@ -89,6 +89,8 @@ Content-Type: application/json
    }
 }
 
+###
+GET https://cms.yukayamamoto.me/api/skills
 
 
 ### Login APP
@@ -99,5 +101,3 @@ Content-Type: application/json
   "identifier": "bill@bill.com",
   "password": "123456"
 }
-
-###
