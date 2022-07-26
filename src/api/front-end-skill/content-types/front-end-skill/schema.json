@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "front_end_skills",
+  "info": {
+    "singularName": "front-end-skill",
+    "pluralName": "front-end-skills",
+    "displayName": "FrontEndSkill"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SkillName": {
+      "type": "string"
+    },
+    "SkillLevel": {
+      "type": "integer"
+    },
+    "SkillIcon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
