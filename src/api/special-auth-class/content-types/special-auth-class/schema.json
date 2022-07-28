@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_auth_classes",
+  "info": {
+    "singularName": "special-auth-class",
+    "pluralName": "special-auth-classes",
+    "displayName": "SpecialAuthClass"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

@@ -90,10 +90,10 @@ Content-Type: application/json
 }
 
 ###
-GET https://cms.yukayamamoto.me/api/skills
+GET https://cms.yukayamamoto.me/api/front-end-skills?populate=deep
 
 
-### Login APP
+###
 POST https://cms.yukayamamoto.me/api/auth/local
 Content-Type: application/json
 
@@ -101,3 +101,29 @@ Content-Type: application/json
   "identifier": "bill@bill.com",
   "password": "123456"
 }
+
+
+
+### Authroization
+### Register (Also, you can create a new default user by usign Strapi admin screen)
+POST http://localhost:1337/api/auth/local/register
+Content-Type: application/json
+
+{
+    "username":"Bill",
+    "email": "bill@bill.com",
+    "password":"123456"
+}
+
+### Authenticate an user (You can authenticate a user by sending a POST request)
+POST http://localhost:1337/api/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "mary@mary.com",
+  "password": "123456"
+}
+
+### Accessed your generated JWT token
+GET http://localhost:1337/api/skills
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU4ODU1NzQxLCJleHAiOjE2NjE0NDc3NDF9.BGyj5wHGqeMty9DWHZE_RXeo2ozOQW4n2InhTfZ6pe0

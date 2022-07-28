@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apparelpages",
+  "info": {
+    "singularName": "apparelpage",
+    "pluralName": "apparelpages",
+    "displayName": "Apparelpage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_desc": {
+      "type": "text"
+    },
+    "product_price": {
+      "type": "decimal"
+    },
+    "product_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "product_quantity": {
+      "type": "integer"
+    },
+    "product_display": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
