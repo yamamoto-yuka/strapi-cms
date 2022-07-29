@@ -4,7 +4,8 @@
   "info": {
     "singularName": "apparelpage",
     "pluralName": "apparelpages",
-    "displayName": "Apparelpage"
+    "displayName": "Apparelpage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,12 @@
       "type": "decimal"
     },
     "product_image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "product_quantity": {
       "type": "integer"

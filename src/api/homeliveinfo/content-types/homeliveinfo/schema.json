@@ -23,14 +23,6 @@
     "desc": {
       "type": "string",
       "required": false
-    },
-    "btnname": {
-      "type": "string",
-      "required": false
-    },
-    "url": {
-      "type": "string",
-      "required": false
     }
   }
 }
