@@ -4,7 +4,8 @@
   "info": {
     "singularName": "special-auth-class",
     "pluralName": "special-auth-classes",
-    "displayName": "SpecialAuthClass"
+    "displayName": "specialAuthClass",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
