@@ -63,6 +63,9 @@ GET https://cms.yukayamamoto.me/api/skills?populate=*
 GET https://cms.yukayamamoto.me/api/projects-portfolios?populate=deep
 
 ###
+GET http://localhost:1337/api/projects-portfolios?populate=*
+
+###
 GET https://cms.yukayamamoto.me/api/projects-portfolios/1?populate=deep
 
 ###
@@ -104,14 +107,17 @@ Content-Type: application/json
 
 
 
+
+
+
 ### Authroization
 ### Register (Also, you can create a new default user by usign Strapi admin screen)
 POST http://localhost:1337/api/auth/local/register
 Content-Type: application/json
 
 {
-    "username":"Bill",
-    "email": "bill@bill.com",
+    "username":"New",
+    "email": "new@new.com",
     "password":"123456"
 }
 
@@ -120,10 +126,79 @@ POST http://localhost:1337/api/auth/local
 Content-Type: application/json
 
 {
-  "identifier": "mary@mary.com",
+  "identifier": "yamamoto_yuka@hotmail.com",
   "password": "123456"
 }
+
+
+### Authenticate an user (You can authenticate a user by sending a POST request)
+POST https://cms.yukayamamoto.me/api/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "yamamoto_yuka@hotmail.com",
+  "password": "123456"
+}
+
+
+### Update user info
+PUT http://localhost:1337/api/users/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU5NDg5MDc3LCJleHAiOjE2NjIwODEwNzd9.QSB6dUu7u7UejEKZ6NIzGbvTH0B-RxbxTRgbaspwWs4
+{
+  "username": "mary",
+  "email": "mary@mary.com"
+}
+
+
+### forgotPassword
+POST http://localhost:1337/api/auth/forgot-password
+Content-Type: application/json
+
+{
+  "email": "yamamoto_yuka@hotmail.com",
+  "url": "http://localhost:4200/trunkrecords/account/password"
+}
+
+###
+POST  https://cms.yukayamamoto.me/api/auth/forgot-password
+Content-Type: application/json
+
+{
+  "email": "yamamoto_yuka@hotmail.com",
+  "url": "http://localhost:4200/trunkrecords/account/password"
+}
+
+
+
+###
+POST http://localhost:1337/api/auth/reset-password
+Content-Type: application/json
+
+{
+    "code": "privateCode",
+    "password": "myNewPassword",
+    "passwordConfirmation": "myNewPassword"
+}
+
 
 ### Accessed your generated JWT token
 GET http://localhost:1337/api/skills
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU4ODU1NzQxLCJleHAiOjE2NjE0NDc3NDF9.BGyj5wHGqeMty9DWHZE_RXeo2ozOQW4n2InhTfZ6pe0
+
+### Password change
+
+
+
+
+
+
+###  
+PUT  https://cms.yukayamamoto.me/api/users/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU5NDg5MjQ4LCJleHAiOjE2NjIwODEyNDh9.kV2dBZaWFK4vKxUCLarH-aNpGto0bFRMvAbFzkTLIbE
+
+{
+  "username": "updated",
+  "email": "test@test.com"
+}
