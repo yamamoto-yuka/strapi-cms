@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_portfolios",
+  "info": {
+    "singularName": "about-portfolio",
+    "pluralName": "about-portfolios",
+    "displayName": "aboutPortfolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "PersonalTitle": {
+      "type": "string"
+    },
+    "PersonalDescription": {
+      "type": "text"
+    },
+    "back_end_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::back-end-skill.back-end-skill"
+    },
+    "front_end_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::front-end-skill.front-end-skill"
+    },
+    "other_skill": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::other-skill.other-skill"
+    },
+    "PersonalVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "AboutVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Resume": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

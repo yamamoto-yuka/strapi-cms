@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "front_end_skills",
+  "collectionName": "other_skills",
   "info": {
-    "singularName": "front-end-skill",
-    "pluralName": "front-end-skills",
-    "displayName": "FrontEndSkill",
-    "description": ""
+    "singularName": "other-skill",
+    "pluralName": "other-skills",
+    "displayName": "OtherSkill"
   },
   "options": {
     "draftAndPublish": true

@@ -49,11 +49,6 @@
         "images"
       ]
     },
-    "skills": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::skill.skill"
-    },
     "project_images": {
       "type": "relation",
       "relation": "oneToMany",
