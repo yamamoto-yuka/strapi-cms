@@ -34,9 +34,9 @@
       "relation": "oneToMany",
       "target": "api::about-description.about-description"
     },
-    "about_personal": {
+    "about_personals": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::about-personal.about-personal"
     },
     "front_end_skills": {
