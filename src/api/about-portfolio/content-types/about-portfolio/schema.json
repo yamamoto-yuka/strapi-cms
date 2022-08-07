@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "about_portfolios",
   "info": {
     "singularName": "about-portfolio",
     "pluralName": "about-portfolios",
-    "displayName": "aboutPortfolio",
+    "displayName": "AboutPortfolio",
     "description": ""
   },
   "options": {
@@ -12,59 +12,47 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "text"
+    "Resume": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
     },
-    "Description": {
-      "type": "text"
+    "Video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
     },
-    "PersonalTitle": {
-      "type": "string"
-    },
-    "PersonalDescription": {
-      "type": "text"
-    },
-    "back_end_skills": {
+    "about_descriptions": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::back-end-skill.back-end-skill"
+      "target": "api::about-description.about-description"
+    },
+    "about_personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::about-personal.about-personal"
     },
     "front_end_skills": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::front-end-skill.front-end-skill"
     },
-    "other_skill": {
+    "back_end_skills": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
+      "target": "api::back-end-skill.back-end-skill"
+    },
+    "other_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
       "target": "api::other-skill.other-skill"
-    },
-    "PersonalVideo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "AboutVideo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "Resume": {
-      "allowedTypes": [
-        "files"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
