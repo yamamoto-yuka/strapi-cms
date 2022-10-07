@@ -215,3 +215,5 @@ GET https://cms.yukayamamoto.me/api/home-page
 GET https://cms.yukayamamoto.me/api/about-portfolio?populate=*
 
 ###
+GET http://localhost:1337/api/apparelpages?pagination[page]=1
+
