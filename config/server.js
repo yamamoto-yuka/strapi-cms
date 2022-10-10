@@ -6,19 +6,19 @@ module.exports = ({ env }) => ({
   },
 });
 
-module.exports = ({ env }) => ({
-  connection: {
-    client: 'mysql',
-    connection: {
-      host: env('DATABASE_HOST','134.122.33.23'),
-      port: env.int('DATABASE_PORT',3306),
-      database: env('DATABASE_NAME','myadmin'),
-      user: env('DATABASE_USERNAME','strapi'),
-      password: env('DATABASE_PASSWORD', 'MySQL@dmin!12345'),
-      ssl: {
-        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
-      },
-    },
-    debug: false,
-  },
-});
+// module.exports = ({ env }) => ({
+//   connection: {
+//     client: 'mysql',
+//     connection: {
+//       host: env('DATABASE_HOST','localhost'),
+//       port: env.int('DATABASE_PORT',8889),
+//       database: env('DATABASE_NAME','root'),
+//       user: env('DATABASE_USERNAME','strapi'),
+//       password: env('DATABASE_PASSWORD', 'root'),
+//       ssl: {
+//         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+//       },
+//     },
+//     debug: false,
+//   },
+// });

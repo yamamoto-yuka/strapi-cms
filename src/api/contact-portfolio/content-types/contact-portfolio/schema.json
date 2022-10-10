@@ -4,8 +4,7 @@
   "info": {
     "singularName": "contact-portfolio",
     "pluralName": "contact-portfolios",
-    "displayName": "ContactPortfolio",
-    "description": ""
+    "displayName": "contact-portfolio"
   },
   "options": {
     "draftAndPublish": true
@@ -15,11 +14,11 @@
     "ClientName": {
       "type": "string"
     },
-    "Message": {
-      "type": "text"
-    },
     "ClientEmail": {
       "type": "email"
+    },
+    "Message": {
+      "type": "text"
     }
   }
 }
